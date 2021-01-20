@@ -1,6 +1,16 @@
 #include <iostream>
 #include <string>
 
+#ifdef WIN
+
+#include <cstdlib>
+#define PAUSE system("pause");
+
+#elif 
+#define PAUSE 
+
+#endif
+
 using namespace std;
 
 
@@ -34,6 +44,8 @@ int main(){
 	decode(message, key);	// Call our function.
 	
 	cout << "This is the decrypted message:\n" << message << endl;	// Print the decrypted message.
+	
+	PAUSE
 	
 	return 0;
 	}

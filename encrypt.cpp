@@ -1,6 +1,16 @@
 #include <iostream>
 #include <string>
 
+#ifdef WIN
+
+#include <cstdlib>
+#define PAUSE system("pause");
+
+#elif 
+#define PAUSE 
+
+#endif
+
 using namespace std;
 
 
@@ -36,6 +46,8 @@ int main(){
 	code(message, key);	// encrypting via our defined fuction.
 	
 	cout << "This is your encrypted message:\n" << message << endl;	// showing out the encrypted message.
+	
+	PAUSE
 	
 	return 0;
 	}
