@@ -1,6 +1,6 @@
 # encryption
 
-Compiling on UNIX based OS:
+Compiling on UNIX based OS and GNU/LINUX:
 
 `g++ decrypt.cpp -o decrypt && g++ encrypt.cpp -o encrypt`
 
